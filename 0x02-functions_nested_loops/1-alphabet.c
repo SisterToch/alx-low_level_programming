@@ -1,8 +1,8 @@
 #include"main.h"
 /**
- *main - Entry point
- *_putchar: 'prints alphabet in lower cases'
- *Return: always 0
+ *print_alphabet - function that prints alphabet in lower cases
+ *
+ *Return: always 0;
  */
 void print_alphabet(void)
 {
