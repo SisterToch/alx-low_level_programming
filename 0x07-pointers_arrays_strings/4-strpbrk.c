@@ -5,7 +5,7 @@
  *
  * @s:first occurrence in the string
  *
- * @accept: it matches one of the bytes, and gives @NULL if the byte does not exist
+ * @accept: it matches one of the bytes
  *
  * Return: a pointer to the byte
  */
