@@ -10,26 +10,29 @@
  */
 int main(int argc, char **argv)
 {
-	int i;
-	int sum;
+	int i, n, sum = 0;
+	char *flag;
 
-	if (argc == 1)
+	if (argc < 2)
 	{
 		printf("0\n");
+		return (0);
 	}
-	else
+
+	for (i = 1; argv[i]; i++)
 	{
-		for (i = 0; i < argc; i++)
+		n = strtol(argv[i], &flag, 10);
+		if (*flag)
 		{
-			if (!atoi(argv[i]))
-			{
-				printf("Error\n");
-				return (1);
-			}
-			else
-				sum = sum + atoi(argv[i]);
+			printf("Error\n");
+			return (1);
 		}
-		printf("%d\n", sum);
+		else
+		{
+			sum += n;
+		}
 	}
+	printf("%d\n", sum);
+
 	return (0);
 }
