@@ -17,9 +17,11 @@ char *create_array(unsigned int size, char c)
 		return (NULL);
 
 	array = (char *)malloc(sizeof(char) * size);
+	/*Check if memory allocation was successful*/
 	if (array == NULL)
 		return (NULL);
 
+	/*Initialize the char array with the specified char*/
 	for (i = 0; i < size; i++)
 		array[i] = c;
 
