@@ -3,11 +3,12 @@
 #include "lists.h"
 
 /**
- * _strlen - finds the length of a string
- * @str: string to find the length of
+ * _strlen - functions finds the length of a string,
+ * @str: string whose leng is being found.
  *
- * Return: length of string
+ * Return: length of the str
  */
+
 unsigned int _strlen(char *str)
 {
 	unsigned int i;
@@ -23,6 +24,7 @@ unsigned int _strlen(char *str)
  * @str: string to add to the new node
  *
  * Return: pointer to the new node
+ *
  */
 list_t *add_node_end(list_t **head, const char *str)
 {
