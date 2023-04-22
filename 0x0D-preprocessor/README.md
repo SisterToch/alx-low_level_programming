@@ -1,1 +1,0 @@
-Object-like Macro
